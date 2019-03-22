@@ -95,6 +95,7 @@ def dollar_bar(df, m):
     dollar_bar = aux.loc[idx]
     dollar_bar.loc[idx, 'cum_dollar_vol'] = d_acum
     dollar_bar = dollar_bar.set_index('date')
+    dollar_bar["idx"] = idx
     return dollar_bar
 
 
